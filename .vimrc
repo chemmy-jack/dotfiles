@@ -58,23 +58,26 @@ let g:ycm_clangd_binary_path = exepath("clangd")
 set splitbelow
 set splitright
 
-" emmet setup, only load in html and css, use prefix ctr-h
+" emmet setup, only load in html and css and js, use prefix ctr-m
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,css,js EmmetInstall
 let g:user_emmet_leader_key='<C-M>'
 
+" for tab indent only
+set autoindent noexpandtab tabstop=4 shiftwidth=4
+
+" for folding
+set foldenable
+set foldmethod=indent
 " below is still organizing
 
 set softtabstop=4
-set shiftwidth=4
 set exrc
 set secure
-set noexpandtab
 set ruler
 set hlsearch
 highlight search cterm=reverse ctermbg=none ctermfg=none
 set incsearch
-set autoindent
 " enter the current millenuim
 set nocompatible
 
@@ -89,17 +92,14 @@ colorscheme ron
 " powerline  source: https://dev.to/ahferroin7/comment/h892
 set ambiwidth=double
 set autochdir
-set autoindent
 set autoread
 set background=dark
 set nocompatible
-set copyindent
+" set copyindent
 set display=lastline,uhex
 set errorbells
 set expandtab
 set fileformats=unix,dos,mac
-set foldenable
-set foldmethod=syntax
 set incsearch
 set laststatus=2
 set list
@@ -108,15 +108,14 @@ set modeline
 set mouse=a
 set mousef
 set number
-set preserveindent
+" set preserveindent
 set scrolloff=2
 set shiftround
-set shiftwidth=4
 set showcmd
 set showmatch
 set noshowmode
 set showtabline=2
-set smartindent
+" set smartindent
 set smarttab
 set splitbelow
 set splitright
