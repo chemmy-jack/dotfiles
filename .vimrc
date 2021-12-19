@@ -19,6 +19,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'uiiaoo/java-syntax.vim'
 Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'bfrg/vim-cpp-modern'
+Plugin 'tpope/vim-surround'
 " Plugin 'ryanoasis/vim-devicons'
 
 " All of your Plugins must be added before the following line
