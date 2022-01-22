@@ -10,3 +10,4 @@
 
 ## font used
 - font available for powerlevel10k
+  - [click me to get install link for MesloLGS NF](https://github.com/romkatv/powerlevel10k#fonts)
