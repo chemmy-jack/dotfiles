@@ -1,12 +1,12 @@
 # dotfiles
 
-## vim
-- plugins
-    - Vundle (package manager)
-    - vim-commentary (commentary)
-    - html5.vim (for html syntax)
-    - emmet-vim (for html eddit)
-- some commands
+## plugin manager
+- vim : Vundle
+- tmux : tpm
+- zsh : oh-my-zsh
 
+## theme used 
+- zsh : powerlevel10k
 
-## tmux
+## font used
+- font available for powerlevel10k
