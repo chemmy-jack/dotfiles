@@ -2,7 +2,7 @@
 # remember to run this in dotfile repo root
 
 # change shell
-sudo chsh -s /bin/zsh
+chsh -s /bin/zsh
 
 # Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
