@@ -1,4 +1,4 @@
-# install zsh vim tmux berforehand
+# install zsh vim tmux wget berforehand
 # remember to run this in dotfile repo root
 
 # change shell
