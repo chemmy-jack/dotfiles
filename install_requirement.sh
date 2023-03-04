@@ -4,8 +4,9 @@
 # change shell
 chsh -s $(which zsh)
 
-# Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# vim-plug (for unix only)
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # tpm for tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -26,11 +27,22 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 cp .vimrc ~
 cp .tmux.conf ~
 cp .gitconfig ~
+cp -r nvim ~/.config
 
 # install font MesloLGS NF 
 mkdir ~/Downloads
-cd ~/Downloads
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+# cd ~/Downloads
+# wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+# wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+# wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+# wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+#
+#
+#
+#
+# steps after all these:
+# 1. reopen shell to get into zsh
+# 2. edit .zshrc for powerlevel10k, then restart shell againto init
+# 3. use prefix + I in tmux to install packages
+# 4. type :PlugInstall in vim to instlal plugins
+# 5. add two add ins to .zshrc
