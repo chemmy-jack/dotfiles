@@ -25,6 +25,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # copy configure file to root
 cp .vimrc ~
 cp .tmux.conf ~
+cp .gitconfig ~
 
 # install font MesloLGS NF 
 mkdir ~/Downloads
