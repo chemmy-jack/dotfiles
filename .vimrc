@@ -13,17 +13,18 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-commentary'
-Plugin 'othree/html5.vim'
-Plugin 'mattn/emmet-vim'
+" Plugin 'othree/html5.vim'
+" Plugin 'mattn/emmet-vim'
 Plugin 'preservim/nerdtree'
-Plugin 'uiiaoo/java-syntax.vim'
-Plugin 'artur-shaik/vim-javacomplete2'
+" Plugin 'uiiaoo/java-syntax.vim'
+" Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'bfrg/vim-cpp-modern'
-Plugin 'tpope/vim-surround'
-Plugin 'moll/vim-node'
-Plugin 'pangloss/vim-javascript'
-Plugin 'hdima/python-syntax'
+Plugin 'tpope/vim-surround' "use S for prefix
+Plugin 'moll/vim-node' "for nodejs
+" Plugin 'pangloss/vim-javascript'
+" Plugin 'hdima/python-syntax'
 Plugin 'jiangmiao/auto-pairs'
+" Plugin 'c.vim'
 " Plugin 'ryanoasis/vim-devicons'
 
 " All of your Plugins must be added before the following line
@@ -154,14 +155,14 @@ autocmd FileType html,css,js EmmetInstall
 let g:user_emmet_leader_key='<C-M>'
 
 " for tab indent only
-set autoindent noexpandtab tabstop=4 shiftwidth=4
+set autoindent noexpandtab tabstop=2 shiftwidth=2
+set softtabstop=2
 
 " for folding
 set foldenable
 set foldmethod=indent
 " below is still organizing
 
-set softtabstop=4
 set exrc
 set secure
 set ruler
